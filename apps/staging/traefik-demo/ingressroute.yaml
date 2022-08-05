@@ -6,7 +6,7 @@ metadata:
 spec:
   routes:
   - kind: Rule
-    match: Host("traefik-demo.0.0.0.0")
+    match: Path("/traef")
     services: 
     - name: traefik-demo
       port: 80
