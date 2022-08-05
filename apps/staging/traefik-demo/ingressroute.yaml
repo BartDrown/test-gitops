@@ -6,7 +6,7 @@ metadata:
 spec:
   routes:
   - kind: Rule
-    match: Host("traefik-demo.10.68.0.70.sslip.io")
-    services:
+    match: Host("traefik-demo.0.0.0.0")
+    services: 
     - name: traefik-demo
       port: 80
