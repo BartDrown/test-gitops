@@ -1,0 +1,12 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: traefik-demo-http
+spec:
+  routes:
+  - kind: Rule
+    match: Host("traefik-demo.10.68.0.70.sslip.io")
+    services:
+    - name: traefik-demo
+      port: 80
